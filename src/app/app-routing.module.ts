@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'conteudo-api',
+    loadChildren: () => import('./conteudo-api/conteudo-api.module').then( m => m.ConteudoApiPageModule)
+  },
+  {
+    path: 'sobre',
+    loadChildren: () => import('./sobre/sobre.module').then( m => m.SobrePageModule)
+  },
 ];
 
 @NgModule({

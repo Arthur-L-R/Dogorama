@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Sobre
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-text>
+    <h2>🐶 App de Cachorros Aleatórios!</h2>
+    <p>
+      Este aplicativo foi desenvolvido com o objetivo de exibir imagens aleatórias de cachorros e os nomes de suas raças utilizando uma API pública.
+    </p>
+
+    <h3>API Utilizada</h3>
+    <p>
+      As imagens dos cachorros são obtidas da API <strong>Dog CEO</strong>, disponível no link:
+    </p>
+    <ion-button expand="block" fill="outline" color="medium" href="https://dog.ceo/dog-api/" target="_blank">
+      Acessar site da API
+    </ion-button>
+  </ion-text>
+
+  <ion-text>
+    <hr />
+  </ion-text>
+
+  <ion-button expand="block" routerLink="/home" color="primary">
+    Retornar a Home
+  </ion-button>
+
+  <ion-button expand="block" routerLink="/conteudo-api" color="secondary">
+    Ir ao Conteúdo
+  </ion-button>
+</ion-content>

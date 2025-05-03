@@ -1,20 +1,27 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Blank
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <h1>Bem-vindo(a)</h1>
+  
+  <p>Este aplicativo foi desenvolvido para ajudar a explorar o maravilhoso mundo dos cães!</p>
+
+  <p>Aqui, você poderá ver imagens de cães aleatórios de várias raças e seus respectivos nomes!</p>
+
+  <p>Explore as opções abaixo para começar a navegar:</p>
+
+  <ion-button expand="block" color="primary" routerLink="/conteudo-api">
+    Ir ao Conteúdo
+  </ion-button>
+
+  <ion-button expand="block" color="secondary" routerLink="/sobre">
+    Saiba Mais
+  </ion-button>
+
 </ion-content>

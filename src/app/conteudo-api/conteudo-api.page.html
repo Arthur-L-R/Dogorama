@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Cachorro Aleatório
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" *ngIf="imageUrl">
+
+  <ion-img [src]="imageUrl" alt="Cachorro aleatório" class="dog-img"></ion-img>
+  <ion-text>
+    <h2>{{ breedName }}</h2>
+  </ion-text>
+
+  <ion-button expand="block" (click)="loadDog()">Carregar outro 🐶</ion-button>
+  
+  <ion-text color="medium">
+    <hr />
+  </ion-text>
+
+  <ion-button expand="block" color="primary" routerLink="/home">
+    Retornar a Home
+  </ion-button>
+
+  <ion-button expand="block" color="secondary" routerLink="/sobre">
+    Saiba Mais
+  </ion-button>
+
+</ion-content>
